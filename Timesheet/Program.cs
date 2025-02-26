@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Timesheet.DB;
 
 PrepareDB prepareDB = new PrepareDB();
@@ -32,3 +35,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+ 

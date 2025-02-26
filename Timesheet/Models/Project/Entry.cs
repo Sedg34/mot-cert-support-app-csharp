@@ -10,7 +10,7 @@ namespace Timesheet.Models.Project
         public DateTime Date { get; set; }
 
         [Required]
-        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
+        [System.ComponentModel.DataAnnotations.Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
         public int Hours { get; set; }
 
         [Required]
@@ -42,3 +42,4 @@ namespace Timesheet.Models.Project
         }
     }
 }
+ 
