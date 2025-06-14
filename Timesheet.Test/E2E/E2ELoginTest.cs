@@ -15,8 +15,8 @@ public class E2ELoginTest
         IWebDriver _webDriver = new ChromeDriver();
 
         _webDriver.Navigate().GoToUrl("http://localhost:8080");
+//Act
         _webDriver.FindElement(By.Name("email")).SendKeys("admin@test.com");
-
         _webDriver.FindElement(By.Name("password")).SendKeys("password123");
         _webDriver.FindElement(By.CssSelector("button")).Click();
 
