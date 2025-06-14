@@ -15,6 +15,7 @@ jobs:
      run: dotnet test Timesheet.Test --filter FullyQualifiedName~Timesheet.Test.Unit --logger trx --results-directory ./test-results
    - name: Run integration and E2E checks
      run: |
+       dotnet build --project Timesheet &
        dotnet run --project Timesheet &
        sleep 10 &&
        dotnet test Timesheet.Test --filter FullyQualifiedName~Timesheet.Test.Api --logger trx --results-directory ./test-results
