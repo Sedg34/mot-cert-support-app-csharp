@@ -1,5 +1,5 @@
 test update notes :)
-update for the sake of it 2.0
+update for the sake of it 2.4
 # TimeSheet Manager
 This project is a simple time sheet manager application. It allows users to log in to the application and add time sheet entries. Users can log in as either standard or admin users with admin users being able to create new timesheets, users and view reports.
 
